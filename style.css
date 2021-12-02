@@ -1,4 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
-    background: url(img/grid.png) center top repeat-y;
+    background: url(img/12_col.gif) center top repeat-y;
     background-size: 100%;
+}
+
+#main {
+    display: grid;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2%;
+    row-gap: 20px;
+}
+
+#top-of-header {
+    background-color: #574C40;
+    display: flex;
+    flex-direction: row;
+}
+
+.some-top-of-header {
+    display: flex;
+    padding: 5px;
+}
+
+.top_logga_facebook{
+    width: 30px;
+}
+
+.top_logga_instagram {
+    width: 30px;
+}
+
+/* Text-inställningar på toppen av sidan, nedan */
+#information-top-of-header {
+    justify-content: flex-end;
+}
+
+#information-top-of-header ul {
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#information-top-of-header li {
+    flex-direction: row;
+    padding: 4px 10px;
+}
+
+#information-top-of-header li:last-child {
+    padding-right: 10px;
+}
+
+header {
+    grid-column: 2 / 9;
+    background-color: #D6BB9F;
+}
+
+.sussie_logga {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 3px #FFFFFF;
 }
