@@ -1,4 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     background: url(img/12_col.gif) center top repeat-y;
     background-size: 100%;
 }
+
+#main {
+    display: grid;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2%;
+    row-gap: 20px;
+}
+
+header {
+    grid-column: 1 / -1;
+    background-color: #D6BB9F;
+    height: 130px;
+}
+
+#top-of-header {
+    background-color: #574C40;
+    display: flex;
+}
+
+#some-top-of-header {
+    display: flex;
+    padding: 5px;
+    padding-left: 60px;
+}
+
+.top_logga_facebook{
+    width: 30px;
+}
+
+.top_logga_instagram {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Text-inställningar på toppen av sidan, nedan */
+div #information-top-of-header {
+    display: flex;
+    margin-right: 30px;
+    justify-content: flex-end;
+}
+
+#information-top-of-header ul {
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#information-top-of-header li {
+    flex-direction: row;
+    padding: 4px 10px;
+    color: #FFFFFF; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+#information-top-of-header ul li:last-child {
+    margin-right: 30px;
+}
+
+/* #meny {
+    display: flex;
+} */
+
+.sussie_logga {
+    width: 20%;
+    padding: 0;
+    margin-left: 80px;
+    position: relative;
+    top: -10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    float: right;
+}
+
+nav ul li {
+    flex-direction: row;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 3px #FFFFFF;
+}
+
+/*
+font-family: 'Playball', cursive;
+*/

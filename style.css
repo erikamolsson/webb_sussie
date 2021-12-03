@@ -19,15 +19,21 @@ body {
     row-gap: 20px;
 }
 
+header {
+    grid-column: 1 / -1;
+    background-color: #D6BB9F;
+    height: 130px;
+}
+
 #top-of-header {
     background-color: #574C40;
     display: flex;
-    flex-direction: row;
 }
 
-.some-top-of-header {
+#some-top-of-header {
     display: flex;
     padding: 5px;
+    padding-left: 60px;
 }
 
 .top_logga_facebook{
@@ -36,10 +42,13 @@ body {
 
 .top_logga_instagram {
     width: 30px;
+    margin-left: 10px;
 }
 
 /* Text-inställningar på toppen av sidan, nedan */
-#information-top-of-header {
+div #information-top-of-header {
+    display: flex;
+    margin-right: 30px;
     justify-content: flex-end;
 }
 
@@ -48,40 +57,45 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 #information-top-of-header li {
     flex-direction: row;
     padding: 4px 10px;
+    color: #FFFFFF; 
+    font-family: 'Quicksand', sans-serif;
 }
 
-#information-top-of-header li:last-child {
-    padding-right: 10px;
+#information-top-of-header ul li:last-child {
+    margin-right: 30px;
 }
 
-header {
-    grid-column: 2 / 9;
-    background-color: #D6BB9F;
-}
+/* #meny {
+    display: flex;
+} */
 
 .sussie_logga {
     width: 20%;
     padding: 0;
-    margin: 0;
+    margin-left: 80px;
+    position: relative;
+    top: -10px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding-bottom: 20px;
+    margin-right: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    width: auto;
+    float: right;
 }
 
 nav ul li {
     flex-direction: row;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -94,3 +108,7 @@ nav ul li a {
 nav ul li a:hover {
     border-bottom: solid 3px #FFFFFF;
 }
+
+/*
+font-family: 'Playball', cursive;
+*/
