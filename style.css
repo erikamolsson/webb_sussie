@@ -96,6 +96,13 @@ nav ul {
 nav ul li {
     flex-direction: row;
     margin: 10px;
+    border-right: #574C40 solid 1px;
+    padding-right: 17px;
+}
+
+nav ul li:last-child {
+    border-right: none;
+    padding-right: 0;
 }
 
 nav ul li a {
