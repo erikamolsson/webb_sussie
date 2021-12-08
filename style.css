@@ -7,15 +7,16 @@ body {
     background-size: 100%;
 }
 
-#main {
+#main-content {
     display: grid;
-    width: 1300px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    column-gap: 2%;
+    column-gap: 2.08%;
+    row-gap: 10px;
 }
 
 header {
@@ -49,14 +50,12 @@ header {
 div #information-top-of-header {
     display: flex;
     margin-right: 30px;
-    justify-content: flex-end;
 }
 
 #information-top-of-header ul {
     list-style-type: none;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -119,11 +118,12 @@ nav ul li a:hover {
 
 .bild_startsida {
     background: url(img/saxar.framsida.png) center top;
-    background-size: 1300px;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    top: -50px;
+    top: -15px;
     z-index: 1;
+    grid-column: 1 / -1;
 }
 
 .rubrik_startsida {
@@ -131,9 +131,116 @@ nav ul li a:hover {
     font-family: 'Playball', cursive;
     color: #f7f4f2;
     text-align: center;
-    padding-top: 330px;
-    padding-bottom: 150px;
+    padding-top: 310px;
+    padding-bottom: 100px;
 }
 
+.välkomst_text {
+    border: solid 2px black;
+    grid-column: 2 / 7;
+}
 
+.öppningstider {
+    border: solid 2px black;
+    grid-column: 7 / -2;
+}
 
+.öppningstider h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* HÄR BÖRJAR FOOTER */
+footer {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2.08%;
+    background-color: #D6BB9F;
+}
+
+.box1 {
+    grid-column: 2 / 5;
+    border: solid 2px black;
+    margin-top: 10px;
+}
+
+.logga_footer {
+    width: 200px;
+    padding-right: 10px;
+}
+
+/* Del om adress i footer */
+.box2{
+    border: solid 2px black;
+    grid-column: 5 / 8;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.box2 h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #f7f4f2;
+    font-size: 25px;
+}
+
+.adress {
+    font-family: 'Quicksand', sans-serif;
+    color: #f7f4f2;
+    font-size: 18px;
+}
+
+/* Del om kontakt i footer */
+.box3 {
+    border: solid 2px black;
+    grid-column: 8 / -2;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.box3 h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #f7f4f2;
+    font-size: 25px;
+}
+
+.kontakt {
+    font-family: 'Quicksand', sans-serif;
+    color: #f7f4f2;
+    font-size: 18px;
+}
+
+/* Del om sociala medier i footer */
+.box4 {
+    border: solid 2px black;
+    grid-column: 4 / 9;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.logga_mail_footer {
+    width: 50px;
+}
+
+.logga_fb_footer {
+    width: 50px;
+}
+
+.logga_insta_footer {
+    width: 50px;
+}
+
+/* Del om upphovsrätt i footer */
+.box5 {
+    grid-column: 1 / -1;
+    background-color: #574C40;
+    margin-top: 30px;
+}
+
+.upphovsrätt {
+    color: #f7f4f2;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
