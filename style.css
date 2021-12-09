@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background: url(img/12_col.gif) center top repeat-y;
     background-size: 100%;
-}
+} */
 
 #main-content {
     display: grid;
@@ -35,6 +35,7 @@ header {
     display: flex;
     padding: 5px;
     padding-left: 60px;
+    justify-content: flex-start;
 }
 
 .top_logga_facebook{
@@ -57,6 +58,8 @@ div #information-top-of-header {
     margin: 0 auto;
     display: flex;
     align-items: center;
+
+    justify-content: flex-end;
 }
 
 #information-top-of-header li {
@@ -116,6 +119,7 @@ nav ul li a:hover {
     border-bottom: solid 3px #FFFFFF;
 }
 
+/* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_startsida {
     background: url(img/saxar.framsida.png) center top;
     background-size: 100%;
@@ -135,18 +139,178 @@ nav ul li a:hover {
     padding-bottom: 100px;
 }
 
+/* HÄR BÖRJAR VÄLKOMSTDELEN */
 .välkomst_text {
-    border: solid 2px black;
     grid-column: 2 / 7;
+    padding: 50px 40px 50px 70px;
+}
+
+.välkomst_text p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .öppningstider {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     grid-column: 7 / -2;
+    padding: 40px 50px;
+    border-left: solid 2px black;
+
+}
+
+.öppningstider p {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .öppningstider h2 {
     font-family: 'Quicksand', sans-serif;
+}
+
+/* HÄR BÖRJAR DEL OM TJÄNSTER */
+.tjänster {
+    grid-column: 2 / -2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.rubrik_tjänster {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ikoner_tjänster {
+    width: 80%;
+    margin: auto;
+}
+
+/* HÄR BÖRJAR GALLERI */
+.foto_galleri {
+    grid-column: 1 / -1;
+    background-color: #58628A;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rubrik_galleri {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #f7f4f2;
+    padding-bottom: 30px;
+}
+
+/* Här börgar slideshow - med foton */
+.slideshow_container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 50px;
+    border: black solid 2px;
+}
+.slideshow_bild {
+    display: none;
+}
+
+.slideshow_container img {
+    vertical-align: middle;
+}
+
+.bild_1,
+.bild_2,
+.bild_3,
+.bild_4,
+.bild_5,
+.bild_6 {
+    width: 30%;
+    margin: auto;;
+}
+
+/* Knappar foto-galleri */
+.previos,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    transition: 0.6s ease;
+    font-size: bold;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Lägger "nästa-knappen" till höger */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previos:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Nummer-text (1 / 6) */
+.number_text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Punkter längst ned, foto-galleri */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.dots_align {
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* HÄR BÖRJAR KARTA */
+.karta {
+    grid-column: 2 / -2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+div iframe {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.rubrik_karta {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 25px;
 }
 
 /* HÄR BÖRJAR FOOTER */
@@ -161,21 +325,22 @@ footer {
 
 .box1 {
     grid-column: 2 / 5;
-    border: solid 2px black;
     margin-top: 10px;
+    margin-left: 20p;
+    margin-left: 70px;
 }
 
 .logga_footer {
-    width: 200px;
+    width: 230px;
     padding-right: 10px;
 }
 
 /* Del om adress i footer */
 .box2{
-    border: solid 2px black;
     grid-column: 5 / 8;
     margin-top: 10px;
-    padding: 10px;
+    margin-left: 120px;
+    padding-top: 10px;
 }
 
 .box2 h3 {
@@ -192,10 +357,10 @@ footer {
 
 /* Del om kontakt i footer */
 .box3 {
-    border: solid 2px black;
     grid-column: 8 / -2;
     margin-top: 10px;
     padding: 10px;
+    margin-left: 60px;
 }
 
 .box3 h3 {
@@ -212,8 +377,7 @@ footer {
 
 /* Del om sociala medier i footer */
 .box4 {
-    border: solid 2px black;
-    grid-column: 4 / 9;
+    grid-column: 4 / 10;
     margin-top: 10px;
     padding: 10px;
     text-align: center;
