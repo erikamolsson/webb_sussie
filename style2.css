@@ -148,6 +148,18 @@ nav ul li a:hover {
     padding-bottom: 60px;
 }
 
+/* HÄR BÖRJAR DEL - INTRO */
+.intro_behandlingar_rubrik {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.intro_behandlingar_text {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.2;
+    font-size: 19px;
+}
+
 /* HÄR BÖRJAR DEL OM BEHANDLINGAR/PRISER */
 .klippning {
     grid-column: 2 / 9;
