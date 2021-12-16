@@ -148,6 +148,23 @@ nav ul li a:hover {
     padding-bottom: 110px;
 }
 
+/* HÄR BÖRJAR DELEN KONTAKTA OSS */
+.kontakta_oss {
+    grid-column: 2 / 9;
+    padding: 10px 60px 10px 20px;
+}
+
+.rubrik_kontakta_oss {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.text_kontakta_oss {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
 /* ÖPPETTIDER */
 .sidebar_öppettider {
     grid-column: 9 / -2;
