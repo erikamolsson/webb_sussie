@@ -120,7 +120,7 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_3 {
-    background: url(img/hairsalon.jpg) center top;
+    background: url(img/klippning_1.png) center top;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -133,19 +133,40 @@ nav ul li a:hover {
 .rubrik_sida_3 {
     font-size: 50px;
     font-family: 'Playball', cursive;
-    /* color: #f7f4f2; */
+    color: #f7f4f2;
     text-align: center;
     padding-top: 240px;
     padding-bottom: 10px;   
 }
 
 .text_sida_3 {
-    /* color: #f7f4f2; */
+    color: #f7f4f2;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 110px;
+}
+
+/* HÄR BÖRJAR DELEN KONTAKTA OSS */
+.kontakta_oss {
+    grid-column: 2 / 9;
+    padding: 10px 60px 10px 20px;
+}
+
+.rubrik_kontakta_oss {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.text_kontakta_oss {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.uppgifter {
+    font-weight: bolder;
 }
 
 /* ÖPPETTIDER */
@@ -183,11 +204,39 @@ nav ul li a:hover {
 /* AVSKILJARE - KAM */
 .bild_sax {
     grid-column: 2 / 9;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .bild_kam {
     width: 290px;
     padding-left: 100px;
+}
+
+/* HÄR BÖRJAR DEL OM BOKNING */
+.bokning{
+    grid-column: 2 / 9;
+    padding: 10px 60px 10px 20px;
+}
+
+.rubrik_bokning {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.text_bokning {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.number {
+    font-weight: bolder;
+}
+
+.observera {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* PRODUKTER */
@@ -232,6 +281,61 @@ div .ghd_logga {
 }
 .ghd_logga{
     width: 170px;
+}
+
+/* HÄR BÖRJAR FORMULÄR */
+.formulär {
+    grid-column: 2 / 9;
+    padding: 20px 60px 30px 20px;
+    background-image: url(img/saxar.framsida.png);
+}
+
+.rubrik_formulär {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #f7f4f2;
+}
+
+.fnamn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #f7f4f2;
+}
+
+.enamn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #f7f4f2;
+}
+
+.meddelande {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #f7f4f2;
+}
+
+#message {
+    width: 90%;
+    margin-top: 10px;
+}
+
+input {
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.skicka {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    padding: 5px;
+    background-color: #58628A;
+    color: #f7f4f2;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Playball', cursive;
+    font-size: 25px;
 }
 
 
